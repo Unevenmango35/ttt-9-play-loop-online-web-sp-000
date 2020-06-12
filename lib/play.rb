@@ -35,21 +35,12 @@ def turn(board)
   end
 end
 
-def turn_count(board)
-  counter = 0
-  board.each {|space|
-    if space == "X" || space == "O"
-      counter += 1   
-    end
-  }
-  counter
-end
-
 # Define your play method below
 
 def play(board)
   loop do
   turn(board)
+  counter = 0
   board.each {|space|
     if space == "X" || space == "O"
       counter += 1   

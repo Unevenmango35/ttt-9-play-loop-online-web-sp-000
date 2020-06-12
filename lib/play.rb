@@ -48,9 +48,13 @@ end
 # Define your play method below
 
 def play(board)
+  loop do
   turn(board)
+  board.each {|space|
+    if space == "X" || space == "O"
+      counter += 1   
+    end
+  }
+  counter
 end
-
-loop do 
-  counter += 1
-  play(board)
+end

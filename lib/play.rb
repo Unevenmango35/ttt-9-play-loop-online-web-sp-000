@@ -53,3 +53,4 @@ end
 
 loop do 
   counter += 1
+  play(board)

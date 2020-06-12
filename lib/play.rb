@@ -38,16 +38,9 @@ end
 # Define your play method below
 
 def play(board)
-  loop do
-  turn(board)
   counter = 0
-  board.each {|space|
-    if space == "X" || space == "O"
-      counter += 1   
-    end
-  }
-  if counter >8
-    break
+  until counter == 9
+  turn(board)
+  counter += 1
   end
-  
 end

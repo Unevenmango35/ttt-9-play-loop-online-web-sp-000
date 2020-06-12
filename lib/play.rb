@@ -51,4 +51,5 @@ def play(board)
   turn(board)
 end
 
-
+loop do 
+  counter += 1

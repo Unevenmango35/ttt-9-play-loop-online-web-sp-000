@@ -55,6 +55,6 @@ def play(board)
       counter += 1   
     end
   }
-  counter
-end
+  if counter >9 
+    break
 end
